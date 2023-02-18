@@ -1,0 +1,46 @@
+/* para decir que a todos los elementos de mi html les quiero aplicar alguna propiedad uso un asterisco */
+* {
+    color:blue; 
+    }
+    
+     /* si yo quiero que a dos elementos distintos les de las mismas propiedades esteticas, los separo por coma*/
+    p, span {
+        color: red;
+        width: 300px;
+    }
+ 
+#mi_parrafo{
+    color:aqua;
+    font-size: 23px;
+}
+
+    /** esto es un comentario dentro de un documento css*/
+    h1 { 
+        font-family: 'Roboto', sans-serif;
+        border: 1px solid black;
+        padding: 5px;
+        /** esta especificacion de cuanto espacio por cada lado, tambien se puede hacer con el padding; otra opcion para ponerlo podria ser en una misma linea, y los valores se corresponden a arriba, derecha izquierda, abajo:  ej:  padding: 30 px 20px 15px 20px */
+        margin-top:  40px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-weight: bold; 
+        color:gray
+        ;}
+    
+       section {
+      width: 300px;
+      border: 15px solid green;
+      padding: 50px;
+      margin: 20px;
+    }
+    
+    .estaesmiclase {
+        font-weight: bold;
+        color:blueviolet 
+    }
+
+    section h1 {
+        /* este comando no me lo aplicó y no entiendo porque.... ver si en los comandos anteriores del archivo estilo , que me anule este comando */
+     font-weight: 400px;
+    }
