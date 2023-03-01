@@ -1,0 +1,9 @@
+body {
+ background-color: blue;
+ color: white;
+}
+
+/*en css lo que permite ap´licarle un estilo a algo en particular, es usando el numeral*/ 
+#demo {
+    color: red;
+}

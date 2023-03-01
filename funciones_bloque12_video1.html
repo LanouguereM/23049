@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funciones en JS</title>
+</head>
+<body>
+    <form>
+        <label>Numero 1
+          <input type="number" id="numero1" required>
+        </label> 
+        <label>Numero 2
+          <input type="number" id="numero2" required>
+        </label>     
+          <button type="button" id="sumar">Realizar suma</button>
+    </form>
+    <div id="resultadoContenedor" style="display: none;">
+        El resultado de la suma es <p id="resultado"></p>
+    </div>
+<!-- esta es una funcion que cuando el usuario haga click en realizar suma aparezca ese div, y nos muestre el resultado de esa sumatoria que estuvimos haciendo  
+; es decir declare un formulario en el cual hay dos numeros que son obligatorios con el atributo required-->
+
+    <script src="sumar.js"></script>
+    <!-- queremos que se ejecute una funcion que cuando el usuario ingrese los dos numeros que se le piden , y hace click en realizar suma, toma esos dos valores los suma, y al resultado se lo pone dentro del elemento "p" y lo muestra-->
+  </body>
+
+</html>
+
