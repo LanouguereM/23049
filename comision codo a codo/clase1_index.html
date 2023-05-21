@@ -1,0 +1,65 @@
+
+   <!-- si yo quiero mover una linea de lugar, me paro en ella y aprieto alt + flecha para abajo o arriba , y me va a relocalizar la línea-->
+   <!--esto es un comentario: se empieza en el html <!- y se cierra con -> ademas se guarda con el atajo control+S -->   
+<!DOCTYPE html>
+<!--apertura etiqueta--> 
+<html lang="es">
+    <!-- lo que va en el "head" no se ve (no se dibuja en el navegador)-->    
+    <head>
+        <!-- el utf-8 ésto hace que entienda un conjunto de caracteres dependiendo del idioma, pro ejemplo la ñ u otros símbolos-->
+        <meta charset="utf-8"/>
+        <!--title: esta etiqueta me cambia el nombre de la pestaña-->
+        <title>Clase2 - html - CaC #23049</title>
+    </head>
+    <!-- lo que se ve -->
+    <body>
+        <!--titulo-->
+        <h1>HOLA</h1>
+        <!--sub titulo (nivel2, de menor importancia respecto del h1)-->
+        <h2>HOLA</h2>
+        <h3>HOLA</h3>
+        <h4>HOLA</h4>
+        <h2>HOLA</h2>
+        <h6>HOLA</h6>
+        
+        <!--parrafo: se usa para poner textos extensos o descripciones-->
+        <p style="font-size: 25px;">
+            Hoy aprendí: ---
+        </p>
+        <p>
+            además....
+        </p> 
+
+    <!--quiero ir a la pagina nosotros.html, lo que sería un enlace relativo, (aca podria poner tambien por ejemplo wwww.google.com); para eso uso la etiqueta a, que tiene un atributo href, que me permite redirigirme a otra página.  Este atributo href no es válido para todas las etiquedas. Por ejemplo la etiqueta <p>, no lo tiene de atributo.   El atributo target es el que me va a permitir que dicho enlace se abra en distintos lugares; por ejemplo, si yo le pongo un target = "_blank" estoy indicando que quiero que el enlace me lo abra en una página nueva-->
+        <a href="nosotros.html" 
+           target="_blank" 
+           id="enlace_suplementario"
+           >
+           Ir a nosotros.html</a>
+   <!-- En el caso que mis etiquetas tengan dos o mas atributos, se complica la lectura. Es por eso que la recomendacion es luego de cada atributo, dar un ENTER asi tiene una mejor visualizacion el código -->
+   <!-- si quiero hacer un salto de linea, es decir que lo que ponga vaya al renglón de abajo , respecto de la línea anterior, tengo que usar el laber <br/> que no necesita cierre-->
+<br/>
+<!--El sgte es un enlace absoluto, ya que requiere toda la URL para poder redireccionar-->
+<a href="https://www.google.com">google</a>
+
+<!-- poner una imagen en la pagina; en el ej de a continuacion, ponemos una source absoluta, es decir con toda la URL-->
+<img src="https://cdn.ciudad.com.ar/sites/default/files/styles/grizzly_galeria/public/nota/2020/08/14/peter_capusotto_ok.jpg?itok=7mRaZ9pV" 
+alt=""
+width="100px"
+height="auto">
+
+<!--etiquetas basicas-->
+<b>Esto es un texto resaltado</b>
+<strong>esto esta tambien resaltado</strong>
+<br>
+<i>texto en cursiva o italica</i>
+<p>soy un texto corto</p>
+<b>esto esta resaltado</b>
+<p>
+    Lorem, <b>ipsum</b> dolor sit amet <i>adipisicing elit.</i>  Doloremque <sub>aspernatur esse  </sub>sapiente nesciunt corporis <mark> numquam harum quam repellat, quaerat porro ex soluta eaque</mark>, nobis quos qui sint ipsum. In.
+</p>
+
+
+</body>
+<!--cierre -->
+</html>

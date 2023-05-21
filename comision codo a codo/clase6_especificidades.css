@@ -1,0 +1,50 @@
+
+/*
+* {
+    /* color: yellow   }  */
+
+/* body {
+    background-color: #202020;
+} */
+
+#parrafoId {
+    color: green;
+    font-size: 13px !important;
+}
+
+/*clase parrafo*/
+.parrafo {
+    color: blue !important;
+    font-size: 28px;
+}
+
+/*selector de tipo*/
+p {
+    color: red;
+    font-size: 24px;
+    font-family: 'Courier New';
+}
+
+/*inline > id > clase > tipo > universal*/
+
+#miSection div p {
+    color:blueviolet !important;
+}
+
+
+/*SELECTORES DESCIENTES*/
+section ul,ol {
+    list-style: none;
+}
+section ol a {
+    text-transform: uppercase;
+}
+
+/*HIJO*/
+.selectorHijo > p{
+    font-size: 16px !important;
+}
+
+.selectorHijo p {
+	font-size: 100px;
+}

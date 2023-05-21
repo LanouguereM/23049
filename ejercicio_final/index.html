@@ -48,24 +48,29 @@
 
 <footer> 
     
-    <button type="button" id="boton"  >Te interesa saber más de mi perfil? Contactame</button>
+    <button type="button" id="boton" scroll="auto" >Te interesa saber más de mi perfil? Contactame</button>
          
           <form id="formulario" style="display: none" action="" method=""  onsubmit="return validando()">
+           <fieldset  >
             <div>
             <label>Organismo/Empresa</label>
-            <input type="text" id="Nombre" name="Nombre" placeholder="Ingrese nombre de organismo/empresa" required/>
+            <input type="text" id="Nombre" name="Nombre" width="300px" placeholder="Ingrese nombre de organismo/empresa" required/>
           </div>
+          
           <div>
             <label>Email</label>
-            <input type="mail" id="Email" name="mail" placeholder="Ingrese su email de contacto" required/>
+            <input type="mail" id="Email" name="mail" width="300px" placeholder="Ingrese su email de contacto" required/>
           </div>
-            <div>
-            <label >Consulta</label>
-            <input type="text" name="Consultas" placeholder="Ingrese consulta sobre el cv" required/>
+          
+          <div>
+            <label>Consulta</label>
+            <textarea  class="input" type="text" name="Consultas"  rows="10" placeholder="Ingrese consulta sobre el cv" required></textarea>
           </div> 
-           <div>
+          
+          <div>
           <button type="submit" id="botonEnviar" >Enviar</button>
         </div>
+      </fieldset>
           </form>
         
         

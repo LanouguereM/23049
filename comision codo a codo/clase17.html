@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/estilos-js.css">
+</head>
+<body>
+    <section>
+        <div>
+            <label for="username">Usuername</label>
+            <input type="text" id="username">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password">
+        </div>
+        <button id="btnLogin">
+            Login
+        </button>
+    </section>
+    <section>
+        <div id="resultado"></div>
+    </section>
+    <!-- <script src="../js/tipos-variables.js"></script> -->
+    <script src="../js/login.js"></script>
+</body>
+</html>
+
+
+const apuntadorALogin = document.getElementById('btnLogin');
+
+//asocio el evento click
+//.addEventListener viene de fabrica!
+apuntadorALogin.addEventListener('click',login)
+
+function login() 
+{
+    
+    //1 capturo el username
+    const apuntadorAUsername = document.getElementById('username');
+
+    //2 toma el contenido
+    const username = apuntadorAUsername.value;
+
+    //3 capturo la password (en una sola linea)
+    const password = document.getElementById('password').value;
+
+    //scope de una variable
+    const apuntadorADivResultado = document.getElementById('resultado');
+
+    //4 evaluo
+    if(username === 'carlos' && password === '1234') {
+        //bien
+        apuntadorADivResultado.innerHTML('success');
+    }else {
+        //mal
+        apuntadorADivResultado.innerHTML('invalid');
+    }
+}
+
+const apuntadorALogin = document.getElementById('btnLogin');
+
+//asocio el evento click
+//.addEventListener viene de fabrica!
+apuntadorALogin.addEventListener('click',login)
+
+function login() 
+{
+    //1 capturo el username
+    const apuntadorAUsername = document.getElementById('username');
+
+    //2 toma el contenido
+    const username = apuntadorAUsername.value;
+
+    //3 capturo la password (en una sola linea)
+    const password = document.getElementById('password').value;
+
+    //scope de una variable
+    const apuntadorADivResultado = document.getElementById('resultado');
+
+    //valido que se hayan completado los campos username y password
+    //guard
+    if(username === '' || password === '') {
+        //quiero que se termine 
+        apuntadorADivResultado.innerHTML = 'complete los campos';       
+        return;
+    }
+
+    //4 evaluo
+    if(username === 'carlos' && password === '1234') {
+        //bien
+        apuntadorADivResultado.innerHTML = 'success';
+    }else {
+        //mal
+        apuntadorADivResultado.innerHTML = 'invalid';
+    }
+}
+

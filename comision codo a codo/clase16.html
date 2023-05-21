@@ -1,0 +1,48 @@
+var edad = 10;
+let edad2 = 10;
+const edad3 = 10;
+
+//QUIERO APUNTAR AL H1
+const apuntadorAlH1 = document.getElementById('h1');
+
+//mostrar que es lo que esta apuntando apuntadorAlH1
+console.log(apuntadorAlH1);
+
+//ahora del apuntadorAlH1 quiero mostrar el texto que tiene "texto"
+console.log(apuntadorAlH1.innerText);
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/estilos-js.css">
+</head>
+<body>
+    <h1 id="h1">
+        texto
+    </h1>
+    <script src="../js/tipos-variables.js"></script>
+</body>
+</html>
+
+
+/*
+    quiero sumar los valores que estan en el html
+*/
+const apuntadorAA = document.getElementById('a');
+
+const apuntadorAB = document.getElementById('b');
+
+const apuntadorARes = document.getElementById('res');
+
+const apuntadorAlSumador = document.getElementById('sumador');
+
+//al boton sumar le asocio una funcion
+apuntadorAlSumador.addEventListener('click',sumar);
+
+function sumar() {
+    console.log('sumando...');
+}

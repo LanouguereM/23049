@@ -1,0 +1,34 @@
+div {
+ background-color: dimgray;
+
+}
+
+div.cuadro {
+ width: 60%;
+ height: 500 px;
+ border:  4px solid #2c2b2b; 
+ border-radius: 4%;
+ z-index: 1;
+ position: absolute;
+
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: left;
+}
+
+img {
+    border-radius: 50%;
+    width: 100px;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    position: fixed;
+    transform: rotate(360deg);
+    transition: width .2s;
+}
+
+img :hover{
+    width: 40%;
+}

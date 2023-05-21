@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase2</title>
+</head>
+<body>
+    <!-- nav es una etiqueta semantica, es decir que tiene un sentido, da intro a la barra de navegacion, y suele contener links, que suelen tener la etiqueta ul , que son unas listas no ordenadas.  En la seccion main estara lo principal; en la seccion aside estaran los anuncios. Dentro de estas partes a su vez puede haber varias section. footer: tiene info institucional -->
+    <header>
+        <h1>Listas ordenadas|tablas|etc...</h1>
+    </header>
+    <!-- los links van en la etiqueta nav, que es simplemente una caja, que contiene a su vez otras etiquetas-->
+    <nav>
+        <!--la etiqueta ul es una lista no ordenada-->
+        <ul>
+            <!--list item-->
+            <li>
+                <a href="index_CLASE_1.html">Home</a>
+            </li>
+            <li>
+                <a href="nosotros_CLASE1.html">Nosotros</a>
+            </li>
+        </ul>
+    </nav>
+    <!--dentro de la etiqueta main se encuentra el contenido principal-->
+    <main>
+        <h2>Mundial Qatar 2022</h2>
+        <section>
+            <h3>Equipos</h3>
+            <p>los equipos bla bla bla</p>
+        </section>
+        <section>
+            <h3>Estadios</h3>
+            <!-- la etiqueta ol es para armar una lista ordenada, es decir que me numera a los items que vaya a poner-->
+            <ol>
+                <li>Estadio A</li>
+                <li>Estadio B</li> 
+                <li>Estadio C</li>
+                <li>Estadio D</li>
+            </ol>
+        </section>
+        <section>
+            <h3>Ganadores</h3>
+            <!-- con los atributos border, que me encuadra la celda, y el widht 100% que hace que ocupe el total de la pantalla, le doy forma a mi tabla-->
+            <table border="1" width="100%">
+                <thead>
+                      <!--la etiqueta tr señala la primer fila, donde van las categorias de la tabla-->
+                    <tr>
+                        <!-- columnas -->
+                        <th>
+                            &nbsp;
+                            <!-- este es un codigo que hace que la tabla tenga un espacio vacio, sin necesidad de escribir una categoria en la primer fila de encabezados-->
+                        </th>
+                        <th>
+                            Nombre
+                        </th>
+                        <th>
+                            Apellido
+                        </th>
+                        <th>
+                            #Comisión
+                        </th>
+                        <th>
+                            Acciones
+                        </th>
+                    </tr>
+                </thead>
+                <!-- el tbody es la etiqueta que contiene todas las celdas con datos de una tabla-->
+                <tbody>
+                    <!--segunda fila-->
+                    <tr align="center">
+                        <td>
+                            <img src="./img/meli-foto.jpg" width="25%"/>
+                        </td>
+                        <td>
+                           Melina
+                        </td>
+                        <td align="right">
+                            Lan
+                        </td>
+                        <td>
+                            23049
+                        </td>
+                        <td>
+                            <!-- el href es el que me permite que algo no sea un texto plano, sino que sea una opcion que aquel que navega la pagina pueda clickear-->
+                            <a href="">eliminar</a> - 
+                            <a href="">actualizar</a>
+                        </td>
+                    </tr>
+                    <!--tercer fila-->
+                    <tr align="center">
+                        <td width="20%">
+                            <img src="" width="25%"/>
+                        </td>
+                        <td>
+                           Franco
+                        </td>
+                        <td align="right">
+                            Cejas
+                        </td>
+                        <td>
+                            23049
+                        </td>
+                        <td>
+                            <a href="">eliminar</a> - 
+                            <a href="">actualizar</a>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td>
+                            <img src="./img/avatar.png" width="25%"/>
+                        </td>
+                        <td>
+                           Homero
+                        </td>
+                        <td align="right">
+                            Thompson
+                        </td>
+                        <td>
+                            23049
+                        </td>
+                        <td>
+                            <a href="">eliminar</a> - 
+                            <a href="">actualizar</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <!-- el atributo colspan me permite extender el espacio que ocupa una columna-->
+                        <td colspan="5" align="center">
+                            Codo a Codo 2023 - Bootcamp Fullstack Java
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section>
+            <!-- el iframe sirve para incluir contenido de otro sitio dentro de la pagina web-->
+            <h3>Iframe - incluir contenido externo</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26217.336937634143!2d-58.64440416081508!3d-34.77656798624531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc48e7325032b%3A0x1f3adf4d7f0212d8!2sObra%20del%20Padre%20Mario%20Pantaleo!5e0!3m2!1ses-419!2sar!4v1678227813903!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section>
+            <hr>
+            <h3>temas del mundial</h3>
+            <hr>
+            <video src="">  </video>
+            <!-- si yo quisiera que el audio se dispare apenas se abre la pagina tengo que poner el atributo autoplay="false" -->
+            <audio  controls loop
+            src="./audio y video/las pastillas del abuelo - el sensei.mp3">  </audio>
+        </section>
+    </main>
+    <!--anuncios-->
+    <aside>
+        <!--  anuncio nro 1-->
+        <section>
+            <img src="./img/avatar.png" width="5%">
+            <ul>
+                <li>
+                    Visita Marde Planta
+                </li>
+            </ul>
+        </section>
+        <!--anuncio nro2-->
+        <section>
+            <img src="./img/avatar.png" width="5%">
+            <ul>
+                <li>
+                    Visita Marde Planta
+                </li>
+            </ul>
+        </section>
+    </aside>
+</body>
+</html>

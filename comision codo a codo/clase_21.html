@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    calcularAnios = () => {
+
+        let fechaDeMiCumple = obtenerCumple();
+    
+        if(!fechaDeMiCumple)
+         return;
+         
+        let fechaSplitted = formatoFecha(fechaDeMiCumple);
+    
+        let fechaDeMiCumpleConvetida = convertirFecha(fechaSplitted);
+    
+        const edad =  calcularEdad(fechaDeMiCumpleConvetida);
+    
+        let plan;
+        //si edad   <=25             => plan1
+        //si edad   > 25 && <= 35    => plan2 (>,<,>=,<=, !==)
+        //si edad   > 35             => plan3
+        if(edad <=25 ){ 
+            plan = 'plan1';
+        }
+        if(edad > 25 && edad <=35) {
+            plan = 'plan2';
+        }
+        if(edad > 35) {
+            plan = 'plan3';   
+        }
+    
+        //si plan es plan 1 => 1000
+        //si plan es plan 2 => 1500
+        //si plan es plan 3 => 3500
+        let costoDelPlan;
+        switch(plan) {
+            case 'plan1':
+                costoDelPlan = 1000;
+                break;
+            case 'plan2':
+                costoDelPlan = 1500;
+                break;
+            case 'plan3': 
+                costoDelPlan = 3500;
+                break;
+        }
+        
+        mostrarResultado(edad + '-'+ plan + '-'+ costoDelPlan);
+    
+    }
+    
+    calcularEdad = (fechaDelFormulario) => {
+        debugger;
+        // logica
+        return new Date().getFullYear() - fechaDelFormulario.getFullYear();
+    }
+    
+    obtenerCumple = () =>{
+        const apuntadorAMiCumple = document.getElementById('miCumple');
+        const fechaDeMiCumple = apuntadorAMiCumple.value;
+        return fechaDeMiCumple;
+    }
+    
+    formatoFecha = (fechaDeMiCumple) =>{
+        const fechaSplitted = fechaDeMiCumple.split('-');
+        console.log(fechaSplitted);
+        return fechaSplitted;
+    }
+    
+    convertirFecha = (fechaSplitted) =>{
+        const fechaDeMiCumpleConvetida = new Date(fechaSplitted[0], Number(fechaSplitted[1])-1, fechaSplitted[2]);
+        return fechaDeMiCumpleConvetida;
+    }
+    
+    mostrarResultado = (fechaDeMiCumpleConvetida) =>{
+        document.getElementById('resultado').innerHTML =fechaDeMiCumpleConvetida;
+    }
+    //
+    const edades = [18,21,55,75];
+//              0   1  2  3
+
+for(let idx=0;idx < edades.length;idx++) {
+    console.log(idx, edades[idx]);
+    //quiero saber si esta el 55 en el array----
+    if(edades[idx] === 55) {
+        console.log(`${edades[idx]} está en el indice:${idx}`);
+    }
+}
+const edades = [18,21,55,75,36,55,85,21,10,5,36];
+
+//busquen al mayor
+let mayor;
+//indice mayor
+let indiceMayor;
+
+//busquen al menor
+let menor;
+//indice del menor
+let indiceMenor;
+
+//si hay mas de un  mayor o menor
+//poner dentro de un array los mayores/menor
+
+//sumar las edades
+//acumulador
+let acumulador=0;
+
+//contar cantidad de 55
+let cantidadDe55;
+
+//0 -> hasta el final
+for(let idx=0;idx < edades.length;idx++) {
+    acumulador = acumulador +  edades[idx];
+}
+
+console.log(acumulador);
+
+
+
+</body>
+</html>

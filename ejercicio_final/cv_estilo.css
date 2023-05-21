@@ -46,11 +46,16 @@ li, p  {
 
 button {
     margin-top: 4%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
     padding: 1%;
     display:block;
     margin-left: auto;
     margin-right: auto;
+    
+}
+
+textarea {
+    width: 400 px;
 }
 
 @media screen and (max-width: 768px) {

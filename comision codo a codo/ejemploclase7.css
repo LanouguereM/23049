@@ -1,0 +1,21 @@
+ul  {
+   list-style: none;
+    
+}
+
+#botonrojo {
+    background-color: red;
+    display: inline;
+}
+
+ li.link2 {
+   background-color: grey;
+}
+
+h2 {
+    padding:0px;
+}
+
+h3 {
+    padding: 20px;
+}
