@@ -1,0 +1,90 @@
+const edades = [37, 26, 41, 21,27, 23, 44];
+//               0   1  2   3   4   5   6
+
+//mayor   = 44
+//posicion = 6
+
+//asumo el primero como mayor
+let mayor = edades[0];
+let iMayor = 0;
+
+//recorro el vector buscando si hay alguien mayor
+for(let i=1; i < edades.length; i++) {
+    if(edades[i] > mayor) {
+        mayor = edades[i];
+        iMayor = i;
+    }
+}
+
+//sumatoria de todos los elementos
+//siempre que deba sumar algo inicio en 0
+let suma = 0;
+for(let i=0; i < edades.length; i++) {
+    suma = suma + edades[i];
+}
+console.log(suma);
+console.log (edades.reduce((a,b) => a+b, 0));
+
+//promerdio ???
+function funcionPromedio(suma,cant) {
+    if(cant === 0){
+        console.log("No se puede divir por 0");
+        return;
+    }
+    return suma / cant;
+}
+
+const promedio = funcionPromedio(suma,edades.length);
+
+const alumnos = [
+    {
+        id:1,
+        dni:12345
+    },
+    {
+        id:2,
+        dni:2345
+    },   
+    {
+        id:3,
+        dni:23456
+    },   
+];
+
+//suma de los dni
+const sumaDni = alumnos.reduce((prev,current) => prev + current.dni, 0);
+console.log(sumaDni, funcionPromedio(sumaDni,alumnos.length));
+
+
+//tipos de datos:
+let nombre = 'alguien';//string
+let altura = 178.5;//number (con ,)
+let flag = true;
+
+let nosotros = [
+    {
+        id:1,
+        nombre: 'yo mismo'
+    },
+    {
+        id:2,
+        nombre: 'vos mismo'
+    },
+
+]
+
+console.log(typeof nosotros[1].nombre)
+
+//-------------------------------------
+//quiero el numero 5
+const elementos = [1, 2, 3, 4, 5, 6, 7]
+let piso=-1;
+for (let i=0; i < elementos.length; i++) {
+    if (elementos[i] === 5) {
+        piso = i;
+    }
+}
+if(piso > -1) {
+    console.log('5 esta en', piso )
+}
+//------------------------------------

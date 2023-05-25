@@ -1,10 +1,11 @@
 /*
-    TIPOS DE VARIABLES EN JAVASCRIPT
+ si yo uso la barra y el asterisco en java es un comentario multilinea    
+TIPOS DE VARIABLES EN JAVASCRIPT
 */
 
-//comentario de una sola linea
+//comentario de una sola linea se usan las dos barras 
 
-//CREAR LAS VARIABLES NECEARIAS PARA LOS DATOS DE UNA PERSONA
+//CREAR LAS VARIABLES NECESARIAS PARA LOS DATOS DE UNA PERSONA
 
 //definir
 let nombre;
@@ -13,15 +14,15 @@ let nombre;
 nombre = 'Melina';
 
 // definir y asignar al mismo tiempo
-let apellido = 'Lanougiuere';
+let apellido = 'Lanouguere';
 
-let edad = 52; //numero entero
+let edad = 40; //numero entero
 
-let altura = 178.5; //numero real
+let altura = 176.5; //numero real
 
-let esCasado = true; //boolean
+let esSoltero = true; //boolean
 
-let estaVivo = false;
+let tieneHijos = false;
 
 function hablar(){
 
@@ -30,16 +31,19 @@ function hablar(){
 function saludar() {
 }
 
+//funcion con un tipo de dato fecha
 let fechaNacimiento = Date();
 
 let direccion = Math.random();
 
 // MOSTRAR TODOS LOS VALORES
-//funciones de fabrica:
+//funciones nativas o de fabrica. x ejemplo:
 //alert(): muestra un mensaje en la pantalla
 //console(): mostrar informacion en la consola del navegador
 //prompt()
 //confirm()
+/* console.log es una funcion que tambien viene de fábrica*/
+
 
 console.log(nombre);
 console.log(apellido);
@@ -51,3 +55,5 @@ let persona= {
     dni: '30078504',
     saludar: alert("hola soy melina")
 }
+
+console.log(persona);
